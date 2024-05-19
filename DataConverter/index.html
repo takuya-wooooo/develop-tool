@@ -4,17 +4,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>データ変換ツール</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>データ変換ツール</h1>
-  <textarea id="data-input" placeholder="ここにデータを貼り付けてください"></textarea>
-  <select id="convert-to">
-    <option value="csv-to-json">CSVからJSON</option>
-    <option value="json-to-csv">JSONからCSV</option>
-  </select>
-  <button id="convert-button">変換</button>
-  <pre id="converted-data"></pre>
+  <div class="container">
+    <header>
+      <h1>データ変換ツール</h1>
+    </header>
+    <main>
+      <textarea id="data-input" placeholder="ここにデータを貼り付けてください"></textarea>
+      <div class="form-group">
+        <label for="convert-to">変換先フォーマット:</label>
+        <select id="convert-to">
+          <option value="csv-to-json">CSVからJSON</option>
+          <option value="json-to-csv">JSONからCSV</option>
+        </select>
+      </div>
+      <button id="convert-button">変換</button>
+      <pre id="converted-data"></pre>
+    </main>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>

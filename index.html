@@ -4,15 +4,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DevToolbox</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>DevToolbox</h1>
-  <p>ツールを選択してください</p>
-  <ul>
-    <li><a href="ApiTestScriptGenerator/index.html">APIテストスクリプト生成ツール</a></li>
-    <li><a href="JsonFormatter/index.html">JSON整形ツール</a></li>
-    <li><a href="DataConverter/index.html">データ変換ツール</a></li>
-  </ul>
+  <div class="container">
+    <header>
+      <h1>DevToolbox</h1>
+    </header>
+    <main>
+      <p>使用したいツールを選択してください:</p>
+      <div class="tool-list">
+        <a href="ApiTestScriptGenerator/index.html" class="tool-item">
+          <div class="icon">&#128187;</div>
+          <div class="tool-name">APIテストスクリプトジェネレーター</div>
+        </a>
+        <a href="JsonFormatter/index.html" class="tool-item">
+          <div class="icon">&#128209;</div>
+          <div class="tool-name">JSON整形ツール</div>
+        </a>
+        <a href="DataConverter/index.html" class="tool-item">
+          <div class="icon">&#128260;</div>
+          <div class="tool-name">データ変換ツール</div>
+        </a>
+      </div>
+    </main>
+  </div>
 </body>
 </html>

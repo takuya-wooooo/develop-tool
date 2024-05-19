@@ -3,25 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>APIテストスクリプト生成ツール</title>
+  <title>APIテストスクリプトジェネレーター</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>APIテストスクリプト生成ツール</h1>
-  <form id="api-form">
-    <label for="endpoint">Endpoint URL:</label>
-    <input type="text" id="endpoint" name="endpoint" required>
-    <label for="method">HTTP メソッド:</label>
-    <select id="method" name="method">
-      <option value="GET">GET</option>
-      <option value="POST">POST</option>
-      <option value="PUT">PUT</option>
-      <option value="DELETE">DELETE</option>
-    </select>
-    <!-- Additional form fields for request parameters, headers, etc. -->
-    <button type="submit">実行</button>
-  </form>
-  <pre id="generated-script"></pre>
+  <div class="container">
+    <header>
+      <h1>APIテストスクリプトジェネレーター</h1>
+    </header>
+    <main>
+      <form id="api-form">
+        <div class="form-group">
+          <label for="endpoint">エンドポイントURL:</label>
+          <input type="text" id="endpoint" name="endpoint" required>
+        </div>
+        <div class="form-group">
+          <label for="method">HTTPメソッド:</label>
+          <select id="method" name="method">
+            <option value="GET">GET</option>
+            <option value="POST">POST</option>
+            <option value="PUT">PUT</option>
+            <option value="DELETE">DELETE</option>
+          </select>
+        </div>
+        <button type="submit">スクリプト生成</button>
+      </form>
+      <pre id="generated-script"></pre>
+    </main>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>
