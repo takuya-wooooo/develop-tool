@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>APIテストスクリプト生成ツール</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>APIテストスクリプト生成ツール</h1>
+  <form id="api-form">
+    <label for="endpoint">Endpoint URL:</label>
+    <input type="text" id="endpoint" name="endpoint" required>
+    <label for="method">HTTP メソッド:</label>
+    <select id="method" name="method">
+      <option value="GET">GET</option>
+      <option value="POST">POST</option>
+      <option value="PUT">PUT</option>
+      <option value="DELETE">DELETE</option>
+    </select>
+    <!-- Additional form fields for request parameters, headers, etc. -->
+    <button type="submit">実行</button>
+  </form>
+  <pre id="generated-script"></pre>
+  <script src="script.js"></script>
+</body>
+</html>
