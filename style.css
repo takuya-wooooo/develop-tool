@@ -30,6 +30,7 @@ p {
 
 .tool-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
 }
@@ -57,4 +58,23 @@ p {
 .tool-name {
   font-size: 1.1rem;
   font-weight: 500;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+  .tool-item {
+    width: 100%;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+  .tool-item {
+    width: calc(50% - 20px); /* Adjust width for two items per row */
+  }
+}
+
+@media (min-width: 901px) {
+  .tool-item {
+    width: calc(33.33% - 20px); /* Adjust width for three items per row */
+  }
 }
